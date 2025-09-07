@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/Boxful-shiphero/",   // 👈 nombre exacto de tu repo en GitHub Pages
+  base: mode === "production" ? "/Boxful-shiphero/" : "/",   // Solo usar base path en producción
   server: {
     host: "::",
     port: 8080,
