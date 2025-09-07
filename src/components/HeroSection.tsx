@@ -21,19 +21,19 @@ const HeroSection = () => {
             <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
               <BookOpen className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className="text-primary font-semibold">ShipHero Academy</span>
+            <span className="text-primary font-semibold">Boxful x ShipHero</span>
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            Domina ShipHero con
+            Inicia en ShipHero con
             <span className="block bg-gradient-hero bg-clip-text text-transparent">
-              Tutoriales Expertos
+              Boxful como Aliado
             </span>
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-            Aprende a optimizar tu flujo de trabajo en ShipHero desde conceptos básicos hasta 
-            técnicas avanzadas. Más de 150 tutoriales organizados por nivel de dificultad.
+            Capacítate para operar con ShipHero de manera independiente. Recursos prácticos 
+            y guías paso a paso para que domines la plataforma sin necesidad de asesoría constante.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -49,7 +49,7 @@ const HeroSection = () => {
           <div className="grid grid-cols-3 gap-8 max-w-lg">
             <div className="text-center">
               <div className="text-2xl font-bold text-primary">150+</div>
-              <div className="text-sm text-muted-foreground">Tutoriales</div>
+              <div className="text-sm text-muted-foreground">Recursos</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-primary">50h+</div>

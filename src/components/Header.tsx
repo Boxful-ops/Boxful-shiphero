@@ -11,8 +11,8 @@ const Header = () => {
               <BookOpen className="h-6 w-6 text-primary-foreground" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">ShipHero Academy</h1>
-              <p className="text-sm text-muted-foreground">Centro de Tutoriales</p>
+              <h1 className="text-xl font-bold text-foreground">Boxful x ShipHero</h1>
+              <p className="text-sm text-muted-foreground">Portal de Operaciones</p>
             </div>
           </div>
           
@@ -21,10 +21,10 @@ const Header = () => {
               Inicio
             </a>
             <a href="#" className="text-foreground hover:text-primary transition-colors">
-              Tutoriales
+              Recursos
             </a>
             <a href="#" className="text-foreground hover:text-primary transition-colors">
-              Progreso
+              Mi Progreso
             </a>
             <Button variant="outline" size="sm" className="ml-4">
               <User className="h-4 w-4 mr-2" />

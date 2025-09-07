@@ -20,9 +20,9 @@ const levelStyles = {
 };
 
 const levelText = {
-  beginner: "Básico",
+  beginner: "Inicial",
   intermediate: "Intermedio",
-  advanced: "Avanzado"
+  advanced: "Experto"
 };
 
 const CategoryCard = ({ 
@@ -71,7 +71,7 @@ const CategoryCard = ({
         
         <Button className="w-full bg-gradient-hero hover:opacity-90 transition-opacity">
           <Play className="h-4 w-4 mr-2" />
-          Comenzar Aprendizaje
+          Comenzar Capacitación
         </Button>
       </CardContent>
     </Card>
