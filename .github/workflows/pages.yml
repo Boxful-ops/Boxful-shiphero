@@ -22,8 +22,10 @@ jobs:
           node-version: "20"
       - run: npm ci
       - run: npm run build
-      # 👇 importante para SPA en GitHub Pages
+      # 👉 evita que Jekyll ignore archivos y da soporte SPA
+      - run: touch dist/.nojekyll
       - run: cp dist/index.html dist/404.html
+      - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
