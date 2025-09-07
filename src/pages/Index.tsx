@@ -76,37 +76,16 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Banner Section */}
       <section className="py-20 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-gradient-hero rounded-2xl flex items-center justify-center mx-auto">
-                <GraduationCap className="h-8 w-8 text-primary-foreground" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground">Capacitación Progresiva</h3>
-              <p className="text-muted-foreground">
-                Programa diseñado para llevarte desde novato hasta operador experto de ShipHero.
-              </p>
-            </div>
-            
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-gradient-hero rounded-2xl flex items-center justify-center mx-auto">
-                <Target className="h-8 w-8 text-primary-foreground" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground">Casos Reales</h3>
-              <p className="text-muted-foreground">
-                Situaciones del día a día y ejercicios prácticos basados en operaciones reales de Boxful.
-              </p>
-            </div>
-            
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-gradient-hero rounded-2xl flex items-center justify-center mx-auto">
-                <Trophy className="h-8 w-8 text-primary-foreground" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground">Autonomía Operativa</h3>
-              <p className="text-muted-foreground">
-                Desarrolla las habilidades necesarias para operar independientemente sin depender de soporte externo.
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="bg-gradient-hero rounded-3xl p-12 text-white">
+              <h3 className="text-3xl font-bold mb-4">
+                En Boxful te ayudamos a sacar el máximo provecho de tu operación de fulfillment
+              </h3>
+              <p className="text-xl opacity-90">
+                Para que tu equipo sea más ágil, eficiente y autónomo.
               </p>
             </div>
           </div>
