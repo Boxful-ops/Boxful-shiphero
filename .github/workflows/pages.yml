@@ -17,6 +17,7 @@ jobs:
       - run: npm run build
       - run: touch dist/.nojekyll
       - run: cp dist/index.html dist/404.html
+      - run: ls -la dist/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with: { path: dist }
