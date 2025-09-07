@@ -17,9 +17,9 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222 84% 4.9%;
 
-    --primary: 300 100% 50%;
+    --primary: 14.9 89.6% 50.8%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 320 100% 65%;
+    --primary-glow: 14.9 89.6% 65%;
     
     --success: 142 76% 36%;
     --success-foreground: 0 0% 100%;
@@ -81,9 +81,11 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 300 100% 50%;
+    --primary: 14.9 89.6% 50.8%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 320 100% 65%;
+    --primary-glow: 14.9 89.6% 65%;
+    
+    --gradient-card: linear-gradient(145deg, hsl(217.2 32.6% 12%), hsl(217.2 32.6% 15%));
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;

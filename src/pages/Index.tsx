@@ -10,9 +10,6 @@ const Index = () => {
       title: "Primeros Pasos",
       description: "Conoce los fundamentos de ShipHero. Configuración inicial, navegación básica, gestión de inventario y procesamiento de pedidos esenciales para comenzar.",
       icon: GraduationCap,
-      tutorialCount: 45,
-      duration: "12h",
-      students: 1200,
       level: "beginner" as const,
     },
     {
@@ -20,9 +17,6 @@ const Index = () => {
       title: "Dominando Operaciones",
       description: "Perfecciona flujos avanzados, automatiza procesos, genera reportes personalizados y optimiza operaciones de fulfillment para mayor eficiencia.",
       icon: Target,
-      tutorialCount: 68,
-      duration: "25h",
-      students: 850,
       level: "intermediate" as const,
     },
     {
@@ -30,9 +24,6 @@ const Index = () => {
       title: "Nivel Experto", 
       description: "Alcanza maestría total con configuraciones enterprise, integración de APIs avanzadas, análisis predictivo y arquitecturas complejas de operación.",
       icon: Trophy,
-      tutorialCount: 37,
-      duration: "18h", 
-      students: 420,
       level: "advanced" as const,
     },
   ];
@@ -40,10 +31,11 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <HeroSection />
+      <div className="pt-20">
+        <HeroSection />
       
       {/* Categories Section */}
-      <section className="py-20 bg-background">
+      <section id="categories-section" className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 mb-4">
@@ -51,11 +43,10 @@ const Index = () => {
               <span className="text-primary font-semibold">Rutas de Capacitación</span>
             </div>
             <h2 className="text-4xl font-bold text-foreground mb-4">
-              Elige Tu Nivel de Experiencia
+            Domina ShipHero con Boxful
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Avanza paso a paso con recursos diseñados específicamente para que los equipos 
-              de Boxful dominen ShipHero de manera autónoma.
+            Capacitación pensada para que cada miembro de Boxful desarrolle habilidades clave y aproveche al máximo la plataforma.
             </p>
           </div>
           
@@ -66,9 +57,6 @@ const Index = () => {
                 title={category.title}
                 description={category.description}
                 icon={category.icon}
-                tutorialCount={category.tutorialCount}
-                duration={category.duration}
-                students={category.students}
                 level={category.level}
               />
             ))}
@@ -91,6 +79,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      </div>
     </div>
   );
 };

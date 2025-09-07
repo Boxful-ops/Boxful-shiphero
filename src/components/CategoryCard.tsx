@@ -1,15 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { LucideIcon, Play, Clock, Users } from "lucide-react";
+import { LucideIcon, Play } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface CategoryCardProps {
   title: string;
   description: string;
   icon: LucideIcon;
-  tutorialCount: number;
-  duration: string;
-  students: number;
   level: "beginner" | "intermediate" | "advanced";
 }
 
@@ -29,11 +27,27 @@ const CategoryCard = ({
   title, 
   description, 
   icon: Icon, 
-  tutorialCount, 
-  duration, 
-  students, 
   level 
 }: CategoryCardProps) => {
+  const navigate = useNavigate();
+
+  const getRouteByLevel = (level: string) => {
+    switch (level) {
+      case "beginner":
+        return "/primeros-pasos";
+      case "intermediate":
+        return "/dominando-operaciones";
+      case "advanced":
+        return "/nivel-experto";
+      default:
+        return "/";
+    }
+  };
+
+  const handleNavigate = () => {
+    navigate(getRouteByLevel(level));
+  };
+
   return (
     <Card className="group hover:shadow-hover transition-all duration-300 cursor-pointer border-0 shadow-card-custom bg-gradient-card">
       <CardHeader className="pb-4">
@@ -54,22 +68,10 @@ const CategoryCard = ({
           {description}
         </p>
         
-        <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-          <div className="flex items-center space-x-1">
-            <Play className="h-4 w-4" />
-            <span>{tutorialCount} tutoriales</span>
-          </div>
-          <div className="flex items-center space-x-1">
-            <Clock className="h-4 w-4" />
-            <span>{duration}</span>
-          </div>
-          <div className="flex items-center space-x-1">
-            <Users className="h-4 w-4" />
-            <span>{students}</span>
-          </div>
-        </div>
-        
-        <Button className="w-full bg-gradient-hero hover:opacity-90 transition-opacity">
+        <Button 
+          className="w-full bg-gradient-hero hover:opacity-90 transition-opacity"
+          onClick={handleNavigate}
+        >
           <Play className="h-4 w-4 mr-2" />
           Comenzar Capacitación
         </Button>
